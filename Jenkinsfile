@@ -12,19 +12,13 @@ pipeline{
                     }
                 }
             }
-            // stage('Unit test maven'){
-            //     steps{
-            //         script{
-            //             mvnTest()
-            //         }
-            //     }
-            // }
-            // stage('Integration test maven'){
-            //     steps{
-            //         script{
-            //             mvnIntegrationTest()
-            //         }
-            //     }
-            // }
+            stage('Unit test maven'){
+                steps{
+                    script{
+                        mvnTest()
+                    }
+                }
+            }
+            
         }
 }
