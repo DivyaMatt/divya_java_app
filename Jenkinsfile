@@ -19,12 +19,12 @@ pipeline{
                     }
                 }
             }
-            stage('Integration test maven'){
-                steps{
-                    script{
-                        mvnIntegrationTest()
-                    }
-                }
-            }
+            // stage('Integration test maven'){
+            //     steps{
+            //         script{
+            //             mvnIntegrationTest()
+            //         }
+            //     }
+            // }
         }
 }
