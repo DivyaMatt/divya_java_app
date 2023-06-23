@@ -3,7 +3,7 @@ pipeline{
     agent any
 
     parameters{
-        choice(name: 'action', choices: 'create\ndelete', descrption: 'Choose create or destroy')
+        choice(name: 'action', choices: 'create\ndelete', description: 'Choose create or destroy')
 
     }
         stages{
