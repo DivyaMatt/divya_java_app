@@ -4,7 +4,7 @@ pipeline{
             stage('Git Checkout'){
                 steps{
                     script{
-                        git 'https://github.com/DivyaMatt/divya_java_app.git'
+                        git branch: 'main', url: 'https://github.com/DivyaMatt/divya_java_app.git'
                     }
                 }
             }
